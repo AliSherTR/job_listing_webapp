@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --light-grayish-cyan: hsl(180, 52%, 96%);
+    --Light-Grayish-Cyan: #eef6f6;
+    --Dark-Grayish-Cyan: #7b8e8e;
+    --Very-Dark-Grayish: #2c3a3a;
+}
+body {
+    font-family: "League Spartan", sans-serif;
+    background-color: var(--Light-Grayish-Cyan);
+}
+
+.header {
+    background-image: url("./images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #519b9b;
+}
