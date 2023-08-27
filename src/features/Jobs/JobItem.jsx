@@ -3,17 +3,17 @@ import Tag from "../../ui/Tag";
 export default function JobItem({ job, onAddFilter }) {
     return (
         <div
-            className={`bg-white flex justify-between items-center px-7 py-7 text-sm mb-4 shadow-lg rounded-md ${
+            className={`bg-white flex gap-3 flex-col items-start justify-between px-7 py-7 text-sm mb-12 mt-4 shadow-lg rounded-md md:flex-row  md:items-center  ${
                 job.featured === true
                     ? " border-s-4 border-3 border-green-500 "
                     : ""
             }`}
         >
-            <div className="grid gap-2 ">
+            <div className="md:grid gap-2 flex flex-col ">
                 <img
                     src={job.logo}
                     alt=""
-                    className="w-full row-start-1 row-end-4"
+                    className="row-start-1 row-end-4 translate-y-[-4rem] w-20 md:translate-y-0 md:w-full "
                 />
                 <div className="col-start-2 col-end-2 flex items-center gap-1">
                     <span className="me-2 text-[#7b8e8e] font-bold text-base">
@@ -39,7 +39,7 @@ export default function JobItem({ job, onAddFilter }) {
                     </ul>
                 </div>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
                 {job.languages.map((language, index) => (
                     <FilterTag
                         tagName={language}

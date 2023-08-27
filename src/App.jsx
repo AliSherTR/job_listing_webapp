@@ -42,11 +42,13 @@ export default function App() {
                 onClearFilter={clearFilters}
                 onRemoveFilterItem={removeFilterItem}
             />
-            <Jobs
-                data={jobData}
-                onAddFilter={handleAddFilter}
-                filteredJobs={filteredJobs}
-            />
+            <div className="px-6">
+                <Jobs
+                    data={jobData}
+                    onAddFilter={handleAddFilter}
+                    filteredJobs={filteredJobs}
+                />
+            </div>
         </div>
     );
 }
