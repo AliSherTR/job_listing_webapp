@@ -8,8 +8,8 @@ The state mangement is done using simple useState hook and also this small appli
 
 # The app has the following list of features:
 
-displays a list of all the available jobs.
-users can find a job that is suitable for them.
-users can add filters.
-users can remove a single item from the filters.
-users can clear all the filters in one go.
+- displays a list of all the available jobs.
+- users can find a job that is suitable for them.
+- users can add filters.
+- users can remove a single item from the filters.
+- users can clear all the filters in one go.
